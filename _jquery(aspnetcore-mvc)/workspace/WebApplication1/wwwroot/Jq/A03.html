@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="stylesheets/anythingSlider1.9.2/css/animate.css" rel="stylesheet" />
+    <script src="javascripts/jquery-3.6.1.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+
+            $("#tabs div:gt(0)").css({
+                color: "red",
+            });
+
+            $("#tabs #p1 table tr:has(td):even").css({
+                backgroundColor: "lime",
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#p1">第一頁</a></li>
+            <li><a href="#p2">第二頁</a></li>
+            <li><a href="#p3">第三頁</a></li>
+        </ul>
+        <div id="p1">
+            <table border="1">
+                <tr>
+                    <th>員工編號</th>
+                    <th>員工姓名</th>
+                    <th>員工職稱</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Richard</td>
+                    <td>Manager</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Chanel</td>
+                    <td>HumanResources</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Yvonne</td>
+                    <td>HouseMaker</td>
+                </tr>
+            </table>
+        </div>
+        <div id="p2">
+            Hello 2
+        </div>
+        <div id="p3">
+            Hello 3
+        </div>
+    </div>
+</body>
+</html>
